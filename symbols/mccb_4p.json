@@ -1,0 +1,7 @@
+{
+  "name": "MCCB 4P",
+  "type": "circuit_breaker",
+  "poles": 4,
+  "category": "protection",
+  "tags": ["mccb", "4p", "breaker", "sld"]
+}
