@@ -1,0 +1,2 @@
+# ElectricalWorkbench
+FreeCAD - Electrical Workbench
