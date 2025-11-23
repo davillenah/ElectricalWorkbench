@@ -8,8 +8,20 @@ class ElectricalWorkbenchClass(FreeCADGui.Workbench):
 
     def Initialize(self):
         register_all_commands()
-        self.appendMenu("FEP Tools", ["FEP_OpenSymbolManager"])
-        self.appendToolbar("FEP Tools", ["FEP_OpenSymbolManager"])
+
+        self.appendMenu("FEP Tools", [
+            "FEP_OpenSymbolManager",
+            "FEP_CreateProject",
+            "FEP_GenerateRelease",
+            "FEP_CloseProject"
+        ])
+
+        self.appendToolbar("FEP Tools", [
+            "FEP_OpenSymbolManager",
+            "FEP_CreateProject",
+            "FEP_GenerateRelease",
+            "FEP_CloseProject"
+        ])
 
     def GetClassName(self):
         return "Gui::PythonWorkbench"
