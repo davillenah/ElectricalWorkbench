@@ -1,8 +1,11 @@
-import FreeCADGui
-import FreeCAD
-from fep_ui.workbench import ElectricalWorkbenchClass
 
-FreeCAD.Console.PrintMessage("[ElectricalWorkbench] Cargando GUI...\n")
+
+# ./InitGui.py
+
+from Utils.logger import log_info, log_error
+from workbench import ElectricalWorkbenchClass
+
+log_info(".", "InitGui.py", "Cargando GUI...")
 
 class ElectricalWorkbench(ElectricalWorkbenchClass):
     pass

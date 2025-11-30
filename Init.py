@@ -1,9 +1,14 @@
-import FreeCAD
 
-FreeCAD.Console.PrintMessage("[ElectricalWorkbench] Cargando núcleo...\n")
+
+# ./Init.py
+
+import FreeCAD
+from Utils.logger import log_info, log_error
+
+log_info(".", "Init.py", "Cargando núcleo...")
 
 def Initialize():
-    FreeCAD.Console.PrintMessage("[ElectricalWorkbench] Inicializado correctamente.\n")
+    log_info(".", "Init.py", "Inicializado correctamente.")
 
 def GetClassName():
     return "PythonWorkbench"
